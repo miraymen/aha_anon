@@ -422,10 +422,14 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 .results-carousel { overflow: hidden; }
 .results-carousel .item { margin: 0; overflow: hidden; border-radius: 12px; padding: 0; font-size: 0; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); }
 .results-carousel video { margin: 0; width: 100%; display: block; }
-.results-carousel .item .video-caption { font-size: 1.5rem; color: #333; text-align: center; padding: 12px 0; font-family: 'Noto Sans', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.results-carousel .item .video-caption { font-size: 1.5rem; color: var(--heading); text-align: center; padding: 12px 0; font-family: 'Noto Sans', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
 .cmp-label { font-family: 'Noto Sans', sans-serif; font-weight: 700; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 0; text-align: center; }
 .cmp-ours { color: #2ecc71; }
-.cmp-base { color: #333; }
+.cmp-base { color: var(--heading); }
+/* Keep the pagination dots below the captions instead of on top of them */
+.diversity-section .slider { padding-bottom: 2rem; }
+.diversity-section .slider-page { background: var(--muted); }
+.diversity-section .slider-page.is-active { background: var(--accent); }
 .ours-card { border: 2px solid #2ecc71; border-radius: 12px; }
 </style>
 </head>
@@ -554,7 +558,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== DIVERSITY OF MOTION ==================== -->
-<section class="section">
+<section class="section diversity-section">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">Diversity of Motion</h2>
     <div class="section-divider"></div>
