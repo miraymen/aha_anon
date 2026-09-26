@@ -694,7 +694,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
     <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline A (extracted mesh)</h2>
     <div class="section-divider"></div>
     <p class="has-text-centered" style="color: #666; margin-bottom: 2rem;">
-      Baseline A extracts a mesh from our own scene Gaussians with MiLo, synthesizes motion on it with DIMOS, and renders the result in the 3DGS scene; ours animates directly on the Gaussians.
+      Baseline A extracts a mesh from our own scene Gaussians with MiLo, synthesizes motion in the mesh-based scene, and renders the result in the 3DGS scene; ours animates directly on the Gaussians.
     </p>
     <div class="scenes-grid" style="margin-bottom: 0;">
       <div class="cmp-label cmp-ours">Ours</div>
@@ -721,7 +721,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
     <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline B (VGGT mesh)</h2>
     <div class="section-divider"></div>
     <p class="has-text-centered" style="color: #666; margin-bottom: 2rem;">
-      Same DL3DV video as input. Baseline B reconstructs a mesh with the feed-forward VGGT and synthesizes motion on it with DIMOS; ours reconstructs 3DGS and animates on the Gaussians.
+      Same DL3DV video as input. Baseline B reconstructs a mesh with the feed-forward VGGT and synthesizes motion in the mesh-based scene; ours reconstructs 3DGS and animates on the Gaussians.
     </p>
     <div class="scenes-grid" style="margin-bottom: 0;">
       <div class="cmp-label cmp-ours">Ours</div>
@@ -777,7 +777,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
       </div>
     </div>
       <p class="has-text-justified" style="margin-top: 2rem; font-size: 1.05rem; color: #555; line-height: 1.7;">
-        This comparison pits the highest-quality rendering achievable with meshes against 3DGS. For meshes we take the most photorealistic scenes available, Replica, and a human scan from RenderPeople, animated with DIMOS. For 3DGS we use avatars and scenes from the SuperSplat library. A within-scene comparison is impossible because the two representations require different capture setups. Human raters prefer the 3DGS renderings in 82.1% of pairwise judgments, and 86.4% against a same-constituent mesh pipeline built from the very same Gaussians and avatar (Baseline C in the paper).
+        This comparison pits the highest-quality rendering achievable with meshes against 3DGS. For meshes we take the most photorealistic scenes available, Replica, and a human scan from RenderPeople, with motion synthesized in the mesh-based scene. For 3DGS we use avatars and scenes from the SuperSplat library. A within-scene comparison is impossible because the two representations require different capture setups. Human raters prefer the 3DGS renderings in 82.1% of pairwise judgments, and 86.4% against a same-constituent mesh pipeline built from the very same Gaussians and avatar (Baseline C in the paper).
       </p>
     </div>
   </div>
