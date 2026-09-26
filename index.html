@@ -688,19 +688,19 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
   </div>
 </section>
 
-<!-- ==================== COMPARISON BASELINE B ==================== -->
+<!-- ==================== COMPARISON BASELINE A ==================== -->
 <section class="section">
   <div class="container is-max-widescreen">
-    <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline B (VGGT mesh)</h2>
+    <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline A (extracted mesh)</h2>
     <div class="section-divider"></div>
     <p class="has-text-centered" style="color: #666; margin-bottom: 2rem;">
-      Same DL3DV video as input. Baseline B reconstructs a mesh with the feed-forward VGGT and synthesizes motion on it with DIMOS; ours reconstructs 3DGS and animates on the Gaussians.
+      Baseline A extracts a mesh from our own scene Gaussians with MiLo, synthesizes motion on it with DIMOS, and renders the result in the 3DGS scene; ours animates directly on the Gaussians.
     </p>
     <div class="scenes-grid" style="margin-bottom: 0;">
       <div class="cmp-label cmp-ours">Ours</div>
-      <div class="cmp-label cmp-base">Baseline B</div>
+      <div class="cmp-label cmp-base">Baseline A</div>
     </div>
-    <div class="scenes-grid" style="margin-bottom: 16px;">
+    <div class="scenes-grid" style="margin-bottom: 0;">
       <div class="video-card" style="border: 2px solid #2ecc71; border-radius: 12px;">
         <video autoplay controls muted loop playsinline>
           <source src="./website_content/videos/monocular/rotate_59.mp4" type="video/mp4">
@@ -711,6 +711,21 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
           <source src="./website_content/videos/comparison/rotate_78.mp4" type="video/mp4">
         </video>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COMPARISON BASELINE B ==================== -->
+<section class="section hero is-light">
+  <div class="container is-max-widescreen">
+    <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline B (VGGT mesh)</h2>
+    <div class="section-divider"></div>
+    <p class="has-text-centered" style="color: #666; margin-bottom: 2rem;">
+      Same DL3DV video as input. Baseline B reconstructs a mesh with the feed-forward VGGT and synthesizes motion on it with DIMOS; ours reconstructs 3DGS and animates on the Gaussians.
+    </p>
+    <div class="scenes-grid" style="margin-bottom: 0;">
+      <div class="cmp-label cmp-ours">Ours</div>
+      <div class="cmp-label cmp-base">Baseline B</div>
     </div>
     <div class="scenes-grid" style="margin-bottom: 0;">
       <div class="video-card" style="border: 2px solid #2ecc71; border-radius: 12px;">
@@ -728,7 +743,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== COMPARISON BASELINE D ==================== -->
-<section class="section hero is-light">
+<section class="section">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline D (highest-quality mesh pipeline)</h2>
@@ -769,7 +784,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== KEY CONTRIBUTIONS ==================== -->
-<section class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
+<section class="section hero is-light" style="padding-top: 2rem; padding-bottom: 2rem;">
   <div class="container is-max-desktop">
     <h2 class="title is-2 has-text-centered section-title">Key Contributions</h2>
     <div class="section-divider"></div>
@@ -784,7 +799,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== BIBTEX ==================== -->
-<section class="section hero is-light" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-2 has-text-centered section-title">BibTeX</h2>
     <div class="section-divider"></div>
