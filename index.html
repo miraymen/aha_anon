@@ -601,13 +601,13 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
       <h2 class="title is-2 has-text-centered section-title">Method</h2>
       <div class="section-divider"></div>
       <div class="method-image-wrapper" style="margin-bottom: 1rem;">
-        <img src="./website_content/images/method_overview.png" alt="Method overview">
+        <img src="./website_content/images/method_overview.png?v=20260924" alt="Method overview">
       </div>
       <p class="has-text-justified" style="font-size: 1.05rem; color: #555; line-height: 1.7; margin-bottom: 2.5rem;">
         <strong>Method overview.</strong> Given 3DGS reconstructions of a scene, an avatar, and objects, we (1)&nbsp;build occupancy maps from opacity-filtered Gaussians and plan paths; (2)&nbsp;synthesize locomotion with an RL policy that reads an egocentric walkability grid; (3)&nbsp;synthesize scene interactions by latent optimization against a differentiable SDF proxy; (4)&nbsp;refine human&ndash;scene, human&ndash;object, and object&ndash;scene contact in Gaussian space; and (5)&nbsp;retrieve object interactions from captured clips and chain them with locomotion into long animations, updating the maps as objects move. All stages operate directly on Gaussians without meshes.
       </p>
       <div class="method-image-wrapper" style="margin-bottom: 1rem;">
-        <img src="./website_content/images/dynamics_figure.png" alt="Composing animations with dynamic objects">
+        <img src="./website_content/images/dynamics_figure.png?v=20260924" alt="Composing animations with dynamic objects">
       </div>
       <p class="has-text-justified" style="font-size: 1.05rem; color: #555; line-height: 1.7;">
         <strong>Composing animations with dynamic objects.</strong> (a)&nbsp;Dynamic occupancy maps: object Gaussians are re-projected after every interaction and the path is re-planned on the updated map. (b)&nbsp;Retrieval and inbetweening: captured human&ndash;object clips are placed at the scripted locations and chained with locomotion through inbetweening transitions. (c)&nbsp;Placement and contact refinement: human and object Gaussians are composited with the scene and contact is enforced against the scene and the moving object; without the SDF proxy and refinement, interactions penetrate the scene.
