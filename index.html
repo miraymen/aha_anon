@@ -358,6 +358,9 @@ html[data-theme="dark"] [style*="color: #333"] { color: var(--muted) !important;
 
 /* ============ Polish ============ */
 html { scroll-behavior: smooth; }
+.section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 1.25rem 1.5rem 0; }
+.section-nav a { padding: 3px 12px; border: 1px solid var(--card-border); border-radius: 999px; font-size: 0.95rem; color: var(--accent); }
+.section-nav a:hover { background: var(--accent); color: #fff; }
 ::selection { background: rgba(50, 115, 220, 0.25); }
 .content pre { border: 1px solid var(--card-border); border-radius: 12px; }
 .contribution-number {
@@ -451,6 +454,20 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
   </div>
 </section>
 
+<!-- ==================== SECTION LINKS ==================== -->
+<nav class="section-nav" aria-label="Sections">
+  <a href="#dynamic-objects">Dynamic objects</a>
+  <a href="#static-scenes">Static scenes</a>
+  <a href="#multiple-avatars">Multiple avatars</a>
+  <a href="#diversity">Diversity of motion</a>
+  <a href="#method">Method</a>
+  <a href="#scannet">ScanNet++</a>
+  <a href="#monocular">Monocular videos</a>
+  <a href="#baseline-a">Baseline A (MiLo mesh)</a>
+  <a href="#baseline-b">Baseline B (VGGT mesh)</a>
+  <a href="#baseline-d">Baseline D</a>
+</nav>
+
 <!-- ==================== TEASER ==================== -->
 <section class="section" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
   <div class="container is-max-widescreen">
@@ -466,7 +483,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== ABSTRACT ==================== -->
-<section class="section">
+<section class="section" id="abstract">
   <div class="container is-max-desktop">
     <h2 class="title is-2 has-text-centered section-title">Abstract</h2>
     <div class="section-divider"></div>
@@ -479,7 +496,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== DYNAMIC OBJECTS ==================== -->
-<section class="section hero is-light">
+<section class="section hero is-light" id="dynamic-objects">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Animating Dynamic Objects</h2>
@@ -519,7 +536,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== STATIC SCENES ==================== -->
-<section class="section">
+<section class="section" id="static-scenes">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">Navigation and Interaction in Static Scenes</h2>
     <div class="section-divider"></div>
@@ -540,7 +557,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== MULTIPLE AVATARS ==================== -->
-<section class="section hero is-light">
+<section class="section hero is-light" id="multiple-avatars">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Multiple Avatars in the Same Scene</h2>
@@ -558,7 +575,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== DIVERSITY OF MOTION ==================== -->
-<section class="section diversity-section">
+<section class="section diversity-section" id="diversity">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">Diversity of Motion</h2>
     <div class="section-divider"></div>
@@ -595,7 +612,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== METHOD ==================== -->
-<section class="section hero is-light">
+<section class="section hero is-light" id="method">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Method</h2>
@@ -617,7 +634,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== SCANNET ==================== -->
-<section class="section">
+<section class="section" id="scannet">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">ScanNet++ Results</h2>
     <div class="section-divider"></div>
@@ -640,7 +657,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== MONOCULAR ==================== -->
-<section class="section hero is-light">
+<section class="section hero is-light" id="monocular">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Free-Viewpoint Editing of Monocular Videos</h2>
@@ -689,7 +706,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== COMPARISON BASELINE A ==================== -->
-<section class="section">
+<section class="section" id="baseline-a">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline A (extracted mesh)</h2>
     <div class="section-divider"></div>
@@ -716,7 +733,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== COMPARISON BASELINE B ==================== -->
-<section class="section hero is-light">
+<section class="section hero is-light" id="baseline-b">
   <div class="container is-max-widescreen">
     <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline B (VGGT mesh)</h2>
     <div class="section-divider"></div>
@@ -743,7 +760,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== COMPARISON BASELINE D ==================== -->
-<section class="section">
+<section class="section" id="baseline-d">
   <div class="hero-body">
     <div class="container is-max-widescreen">
       <h2 class="title is-2 has-text-centered section-title">Comparison &mdash; Baseline D (highest-quality mesh pipeline)</h2>
@@ -784,7 +801,7 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 </section>
 
 <!-- ==================== KEY CONTRIBUTIONS ==================== -->
-<section class="section hero is-light" style="padding-top: 2rem; padding-bottom: 2rem;">
+<section class="section hero is-light" id="contributions" style="padding-top: 2rem; padding-bottom: 2rem;">
   <div class="container is-max-desktop">
     <h2 class="title is-2 has-text-centered section-title">Key Contributions</h2>
     <div class="section-divider"></div>
@@ -841,6 +858,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector(id)) bulmaCarousel.attach(id, { slidesToScroll: 1, slidesToShow: 1, navigation: true, navigationKeys: true, loop: true });
   });
 });
+
+/* keep a #section link on target while the videos above it load */
+(function(){
+  var id = decodeURIComponent(location.hash.slice(1));
+  var target = id && document.getElementById(id);
+  if (!target) return;
+  var active = true;
+  function stop(){ active = false; }
+  ['wheel','touchmove','keydown','mousedown'].forEach(function(e){ window.addEventListener(e, stop, {passive: true, once: true}); });
+  function settle(){ if (active) target.scrollIntoView({behavior: 'instant', block: 'start'}); }
+  document.querySelectorAll('video').forEach(function(v){ v.addEventListener('loadedmetadata', settle, {once: true}); });
+  window.addEventListener('load', settle);
+  setTimeout(stop, 15000);
+})();
 
 /* theme toggle (2-state with system default) */
 (function(){
