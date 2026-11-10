@@ -358,7 +358,8 @@ html[data-theme="dark"] [style*="color: #333"] { color: var(--muted) !important;
 
 /* ============ Polish ============ */
 html { scroll-behavior: smooth; }
-.section-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 1.25rem 1.5rem 0; }
+.section-nav { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 1.25rem 1.5rem 0; }
+.section-nav-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .section-nav a { padding: 3px 12px; border: 1px solid var(--card-border); border-radius: 999px; font-size: 0.95rem; color: var(--accent); }
 .section-nav a:hover { background: var(--accent); color: #fff; }
 ::selection { background: rgba(50, 115, 220, 0.25); }
@@ -456,16 +457,20 @@ html[data-theme="dark"] #copy-toast { background: #f1f1f1; color: #1a1a1a; }
 
 <!-- ==================== SECTION LINKS ==================== -->
 <nav class="section-nav" aria-label="Sections">
-  <a href="#dynamic-objects">Dynamic objects</a>
-  <a href="#static-scenes">Static scenes</a>
-  <a href="#multiple-avatars">Multiple avatars</a>
-  <a href="#diversity">Diversity of motion</a>
-  <a href="#method">Method</a>
-  <a href="#scannet">ScanNet++</a>
-  <a href="#monocular">Monocular videos</a>
-  <a href="#baseline-a">Baseline A (MiLo mesh)</a>
-  <a href="#baseline-b">Baseline B (VGGT mesh)</a>
-  <a href="#baseline-d">Baseline D</a>
+  <div class="section-nav-row">
+    <a href="#dynamic-objects">Dynamic objects</a>
+    <a href="#static-scenes">Static scenes</a>
+    <a href="#multiple-avatars">Multiple avatars</a>
+    <a href="#diversity">Diversity of motion</a>
+    <a href="#method">Method</a>
+  </div>
+  <div class="section-nav-row">
+    <a href="#scannet">ScanNet++</a>
+    <a href="#monocular">Monocular videos</a>
+    <a href="#baseline-a">Baseline A (MiLo mesh)</a>
+    <a href="#baseline-b">Baseline B (VGGT mesh)</a>
+    <a href="#baseline-d">Baseline D</a>
+  </div>
 </nav>
 
 <!-- ==================== TEASER ==================== -->
